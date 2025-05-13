@@ -15,10 +15,9 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-### 🐍 GitHub Activity Snake
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LindungiLw/flutter_T-Dorm/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LindungiLw/flutter_T-Dorm/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/LindungiLw/flutter_T-Dorm/output/github-snake.svg" />
+</picture>
 
-![github-snake](https://github.com/rahmalindungi/t_dorm/blob/output/github-snake.svg)
-
-![github-snake-dark](https://github.com/rahmalindungi/t_dorm/blob/output/github-snake-dark.svg#gh-dark-mode-only)
-
-![github-snake-gif](https://github.com/rahmalindungi/t_dorm/blob/output/ocean.gif)
