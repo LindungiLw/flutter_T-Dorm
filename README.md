@@ -1,24 +1,59 @@
-# t_dorm
+# T-Dorm
 
-A new Flutter project.
+Aplikasi asrama mahasiswa berbasis Flutter.
 
-## Getting Started
+> **Status: tahap awal.** Alur navigasinya sudah jalan, tapi halaman Masuk dan
+> Daftar masih kosong dan belum ada penyimpanan data.
 
-This project is a starting point for a Flutter application.
+## Yang sudah jalan
 
-A few resources to get you started if this is your first Flutter project:
+- Splash screen dengan logo, otomatis pindah setelah 3 detik
+- Halaman sambutan dengan tombol **Masuk** dan **Daftar**
+- Navigasi antar halaman
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Rencana berikutnya
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [ ] Form login penghuni
+- [ ] Form pendaftaran akun baru
+- [ ] Halaman beranda setelah login
+- [ ] Data penghuni dan kamar
+- [ ] Tagihan, izin keluar, dan pengumuman
+
+## Cara menjalankan
+
+Butuh Flutter SDK (dikembangkan memakai versi 3.29.2).
+
+```bash
+flutter pub get
+flutter run
+```
+
+Target utamanya Android. Untuk pengembangan bisa juga dijalankan di browser
+dengan `flutter run -d chrome`.
+
+## Struktur
+
+```
+lib/
+├── main.dart               # entry point dan daftar route
+└── pages/
+    ├── cover.dart          # splash screen
+    ├── login_pages.dart    # halaman sambutan
+    ├── member_login.dart   # login penghuni (belum diisi)
+    └── new_member.dart     # pendaftaran akun (belum diisi)
+```
+
+## Perintah yang sering dipakai
+
+```bash
+flutter analyze   # cek kualitas kode
+flutter test      # jalankan test
+```
+
+---
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LindungiLw/flutter_T-Dorm/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LindungiLw/flutter_T-Dorm/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/LindungiLw/flutter_T-Dorm/output/github-snake.svg" />
 </picture>
-
-
