@@ -1,0 +1,20 @@
+# Statistik bahasa GitHub (Linguist)
+#
+# Folder platform di bawah ini seluruhnya dihasilkan otomatis oleh
+# `flutter create` dan tidak pernah diedit manual. Tanpa penandaan ini,
+# C++ dan CMake dari runner desktop mendominasi statistik bahasa repo,
+# padahal kode aplikasi yang sebenarnya ada di lib/ dan seluruhnya Dart.
+#
+# linguist-vendored = file tetap ada dan tetap ikut ter-commit,
+# hanya tidak dihitung sebagai bahasa proyek.
+
+android/**   linguist-vendored
+ios/**       linguist-vendored
+linux/**     linguist-vendored
+macos/**     linguist-vendored
+windows/**   linguist-vendored
+web/**       linguist-vendored
+
+# Kalau nanti menulis kode Kotlin/Swift sendiri (bukan hasil generate),
+# batalkan penandaan untuk folder itu saja, misalnya:
+# android/app/src/main/kotlin/** -linguist-vendored
