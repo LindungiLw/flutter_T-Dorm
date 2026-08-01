@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:t_dorm/pages/cover.dart';
 import 'package:t_dorm/pages/login_pages.dart';
+import 'package:t_dorm/pages/member_login.dart';
 import 'package:t_dorm/pages/new_member.dart';
 
 void main() {
@@ -19,8 +20,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => Cover(),
-        '/login': (context) => login(),
-        '/akunbaru' : (context) => NewMember(),
+        '/login': (context) => LoginPage(),
+        '/masuk': (context) => MemberLogin(),
+        '/akunbaru': (context) => NewMember(),
       },
     );
   }

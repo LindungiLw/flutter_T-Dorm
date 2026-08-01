@@ -10,6 +10,9 @@ class NewMember extends StatefulWidget {
 class _NewMemberState extends State<NewMember> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text("Daftar Akun Baru")),
+      body: const Placeholder(),
+    );
   }
 }

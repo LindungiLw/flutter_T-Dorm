@@ -1,51 +1,44 @@
 import 'package:flutter/material.dart';
 
-class login extends StatefulWidget {
-  const login({super.key});
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
 
   @override
-  State<login> createState() => _loginState();
+  State<LoginPage> createState() => _LoginPageState();
 }
 
-class _loginState extends State<login> {
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      color: Colors.grey,
+    return Scaffold(
+      backgroundColor: Colors.grey,
+      body: Center(
+        child: Container(
+          height: 300,
+          width: 200,
+          color: Colors.green,
 
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Row(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                height: 300,
-                width: 200,
-                color: Colors.green,
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/masuk');
+                },
 
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                          onPressed: (){
-                            Navigator.pushNamed(context, '/akunbaru');
-                          },
+                child: Text("Masuk"),
+              ),
+              SizedBox(height: 12),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/akunbaru');
+                },
 
-                          child: Text("Daftar"),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              )
+                child: Text("Daftar"),
+              ),
             ],
-          )
-        ],
+          ),
+        ),
       ),
     );
   }

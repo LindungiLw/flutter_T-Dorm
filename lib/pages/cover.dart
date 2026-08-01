@@ -2,17 +2,28 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 class Cover extends StatefulWidget {
+  const Cover({super.key});
+
   @override
-  _CoverState createState() => _CoverState();
+  State<Cover> createState() => _CoverState();
 }
 
 class _CoverState extends State<Cover> {
+  Timer? _timer;
+
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () {
-      Navigator.pushNamed(context, '/login');
+    _timer = Timer(Duration(seconds: 3), () {
+      if (!mounted) return;
+      Navigator.pushReplacementNamed(context, '/login');
     });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
   }
 
   @override
